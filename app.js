@@ -101,7 +101,7 @@ app.put('/user/update', async (req, res) => {
         if (result.matchedCount > 0) {
             res.status(200).send({
                 status: 200,
-                message: "Record updated successfully"
+                message: "Records updated successfully"
             });
         } else {
             res.status(404).send({
@@ -113,7 +113,7 @@ app.put('/user/update', async (req, res) => {
         console.error(e);
         res.status(500).send({
             status: 500,
-            message: "An error occurred while updating the record"
+            message: "An error occurred while processing the request"
         });
     } finally {
         await client.close();

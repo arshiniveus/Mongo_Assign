@@ -28,7 +28,7 @@ describe('Update Item', () => {
 
         }
         const response = await request('http://localhost:8009')
-            .post('/user/update')
+            .put('/user/update')
             .send(mockUser);
 
         if (response.status === 200) {

@@ -22,11 +22,9 @@ describe('Update Item', () => {
 
 
     it('should get all user from doc in collection', async () => {
-        const users = db.collection('user');
 
         const response = await request('http://localhost:8009')
-            .put('/user/getAllUser')
-            .send(await users.find({}).toArray());
+            .get('/user/getAllUser')
 
         if (response.status === 200) {
             // User already exists and was updated
