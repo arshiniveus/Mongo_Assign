@@ -26,7 +26,7 @@ describe('Create Item', () => {
             name: 'John',
             gender: 'male',
             location: 'manglr',
-            email: 'assss@gmail.com',
+            email: 'arsghh@gmail.com',
         };
 
         const response = await request('http://localhost:8009')
